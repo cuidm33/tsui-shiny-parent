@@ -1,8 +1,15 @@
 spring:
+  profiles:
+    active:
+      - dev
+---
+server:
+  port: 9001
+
+spring:
+  profiles: dev
   application:
     name: tsui-eureka-server
-    server:
-      port: 9001
 
 eureka:
   server:
@@ -12,4 +19,3 @@ eureka:
   client:
     fetch-registry: false
     register-with-eureka: false
-
