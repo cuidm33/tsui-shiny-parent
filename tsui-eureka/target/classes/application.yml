@@ -1,5 +1,8 @@
-server:
-  port: 9001
+spring:
+  application:
+    name: tsui-eureka-server
+    server:
+      port: 9001
 
 eureka:
   server:
@@ -10,6 +13,3 @@ eureka:
     fetch-registry: false
     register-with-eureka: false
 
-spring:
-  application:
-    name: tsui-eureka-server

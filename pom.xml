@@ -18,6 +18,7 @@
         <module>tsui-eureka</module>
         <module>tsui-service-zuul</module>
         <module>tsui-service-users</module>
+        <module>tsui-service-config</module>
     </modules>
 
     <properties>
