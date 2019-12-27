@@ -1,0 +1,15 @@
+server:
+  port: 9001
+
+eureka:
+  server:
+    eviction-interval-timer-in-ms: 1000
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+
+spring:
+  application:
+    name: tsui-eureka-server
