@@ -8,8 +8,10 @@ spring:
   profiles: dev
   application:
     name: tsui-service-users
-  server:
-    port: 9010
+
+server:
+  port: 9010
+
 eureka:
   client:
     service-url:
