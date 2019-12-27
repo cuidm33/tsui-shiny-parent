@@ -1,0 +1,11 @@
+server:
+  port: 9998
+spring:
+  application:
+    name: tsui-service-zipkin
+
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false

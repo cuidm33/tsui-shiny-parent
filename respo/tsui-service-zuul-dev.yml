@@ -7,6 +7,14 @@ spring:
   profiles: dev
   application:
     name: tsui-service-zuul
+  zipkin:
+    base-url: http://localhost:9998 #所有的数据提交到此服务之中
+    sender:
+      type: web       #提交的类型是web 服务
+    sleuth:
+      sampler:
+        probability: 1.0 # 定义抽样比率，默认为0.1
+
 zuul:
   routes:
     api-product:
@@ -15,8 +23,10 @@ zuul:
     api-order:
       path: /api-order/**
       serviceId: tsui-service-order
+
 server:
   port: 9002
+
 eureka:
   client:
     service-url:
