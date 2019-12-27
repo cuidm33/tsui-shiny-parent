@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      name: tsui-eureka-dev # 定义要读取的资源文件的名称
+      name: tsui-service-users-dev # 定义要读取的资源文件的名称
       profile: dev  # 定义profile的 名称
       label: master # 定义配置文件所在的分支
       uri:  http://localhost:9999 # SpringCloudConfig的服务地址
