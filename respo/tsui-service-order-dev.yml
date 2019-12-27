@@ -2,13 +2,17 @@ spring:
   profiles:
     active:
       - dev
+
 ---
+
 spring:
   profiles: dev
   application:
     name: tsui-service-order
+
 server:
   port: 9020
+
 eureka:
   client:
     service-url:
