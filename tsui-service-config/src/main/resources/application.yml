@@ -11,9 +11,9 @@ spring:
       server:
         git:
           uri: https://github.com/cuidm33/tsui-shiny-parent.git
-          searchPaths: tsui-config
-          username:
-          password:
+          #uri: https://github.com/forezp/SpringcloudConfig.git
+          searchPaths: respo
+
 
 #eureka:
   #instance:
