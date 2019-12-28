@@ -31,5 +31,5 @@ eureka:
     lease-renewal-interval-in-seconds:  2
 
 info:
-  app.name: microcloud-config-client-dev
-  company.name: enjoy
+  app.name: tsui-service-product
+  company.name: tsui
