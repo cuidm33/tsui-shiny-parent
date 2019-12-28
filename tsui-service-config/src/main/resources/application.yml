@@ -21,3 +21,13 @@ spring:
           password:
           search-paths: respo
       label: master
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
