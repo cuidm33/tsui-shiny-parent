@@ -10,7 +10,7 @@ spring:
   application:
     name: tsui-service-product
   zipkin:
-    base-url: http://localhost:9998 #所有的数据提交到此服务之中
+    base-url: http://192.168.1.130:9411 #所有的数据提交到此服务之中
     sender:
       type: web       #提交的类型是web 服务
     sleuth:
