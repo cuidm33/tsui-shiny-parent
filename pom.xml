@@ -19,7 +19,6 @@
         <module>tsui-service-zuul</module>
         <module>tsui-service-users</module>
         <module>tsui-service-config</module>
-        <module>tsui-service-zipkin</module>
         <module>tsui-service-test</module>
     </modules>
 
