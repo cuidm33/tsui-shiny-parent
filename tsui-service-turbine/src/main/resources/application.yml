@@ -8,24 +8,24 @@ spring:
 spring:
   profiles: dev
   application:
-    name: tsui-service-product
+    name: tsui-service-order
   zipkin:
     base-url: http://192.168.1.130:9411 #所有的数据提交到此服务之中
-#    sender:
-#      type: web       #提交的类型是web 服务
+    #    sender:
+    #      type: web       #提交的类型是web 服务
     sleuth:
       sampler:
         probability: 1.0 # 定义抽样比率，默认为0.1
 
 server:
-  port: 9010
+  port: 9030
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:9001/eureka/
   instance:
-    instance-id: tsui-service-product
+    instance-id: tsui-service-product,tsui-service-order
     prefer-ip-address: true
     lease-expiration-duration-in-seconds: 5
     lease-renewal-interval-in-seconds:  2
@@ -36,6 +36,9 @@ management:
       exposure:
         include: "*"
 
-info:
-  app.name: tsui-service-product
-  company.name: tsui
+turbine:
+  aggregator:
+    cluster-config: default # 指定聚合哪些集群，多个使用","分割，默认为default。可使用http://.../turbine.stream?cluster={clusterConfig之一}访问
+  app-config: tsui-service-order,tsui-service-product # 配置Eureka中的serviceId列表，表明监控哪些服务
+  cluster-name-expression: new String("default")
+

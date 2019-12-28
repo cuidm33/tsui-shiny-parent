@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>tsui-service-order</artifactId>
+    <artifactId>tsui-service-turbine</artifactId>
 
     <dependencies>
         <dependency>
@@ -17,10 +17,10 @@
             <artifactId>tsui-common-web</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-        <!--<dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-stream</artifactId>
-        </dependency>-->
+            <artifactId>spring-cloud-netflix-turbine</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

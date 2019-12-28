@@ -20,6 +20,7 @@
         <module>tsui-service-users</module>
         <module>tsui-service-config</module>
         <module>tsui-service-test</module>
+        <module>tsui-service-turbine</module>
     </modules>
 
     <properties>
