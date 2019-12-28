@@ -8,33 +8,33 @@ spring:
 spring:
   profiles: dev
   application:
-    name: tsui-service-order
-  zipkin:
-    base-url: http://192.168.1.130:9411 #所有的数据提交到此服务之中
-    #    sender:
-    #      type: web       #提交的类型是web 服务
-    sleuth:
-      sampler:
-        probability: 1.0 # 定义抽样比率，默认为0.1
+    name: tsui-service-turbine
+#  zipkin:
+#    base-url: http://192.168.1.130:9411 #所有的数据提交到此服务之中
+#    #    sender:
+#    #      type: web       #提交的类型是web 服务
+#    sleuth:
+#      sampler:
+#        probability: 1.0 # 定义抽样比率，默认为0.1
 
 server:
-  port: 9030
+  port: 8769
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:9001/eureka/
   instance:
-    instance-id: tsui-service-product,tsui-service-order
+    instance-id: tsui-service-turbine
     prefer-ip-address: true
     lease-expiration-duration-in-seconds: 5
     lease-renewal-interval-in-seconds:  2
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
 
 turbine:
   aggregator:
