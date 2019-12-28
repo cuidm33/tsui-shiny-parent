@@ -16,11 +16,6 @@ spring:
     sleuth:
       sampler:
         probability: 1.0 # 定义抽样比率，默认为0.1
-  rabbitmq:
-    host: 192.168.1.130
-    port: 5672
-    username: guest
-    password: guest
 
 server:
   port: 9010
@@ -36,5 +31,5 @@ eureka:
     lease-renewal-interval-in-seconds:  2
 
 info:
-  app.name: tsui-service-product
+  app.name: tsui-service-product1234
   company.name: tsui
