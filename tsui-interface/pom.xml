@@ -11,5 +11,13 @@
 
     <artifactId>tsui-interface</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.tsui</groupId>
+            <artifactId>tsui-common-pojo</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 
 </project>

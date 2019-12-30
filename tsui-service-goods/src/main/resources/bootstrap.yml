@@ -1,0 +1,32 @@
+spring:
+  cloud:
+    config:
+      name: tsui-service-goods-dev # 定义要读取的资源文件的名称
+      profile: dev  # 定义profile的 名称
+      label: master # 定义配置文件所在的分支
+      uri: http://192.168.1.130:9999 # SpringCloudConfig的服务地址
+#      discovery:
+#        enabled: true
+#        service-id: MICROCLOUD-CONFIG-BUS
+  rabbitmq:
+    host: 192.168.1.130
+    port: 5672
+    username: guest
+    password: guest
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.130:3306/qingcheng_goods?characterEncoding=UTF8&useSSL=false
+    username: root
+    password: cdm0928
+
+#mybatis配置
+#mybatis:
+      ##  #实体类所在包名
+      ##  type-aliases-package: com.tsui.pojo.product
+      ###通用mapper配置
+      ##mapper:
+      ##  #公用接口类路径
+    ##  mappers: com.tsui.dao
+    ##  identity: MYSQL
+#mybatis:
+#  mapper-locations: classpath:mapping/*.xml
