@@ -1,4 +1,4 @@
-package com.tsui.pojo.product;
+package com.tsui.pojo.goods;
 
 import javax.persistence.Id;
 import javax.persistence.Table;

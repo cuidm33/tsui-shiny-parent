@@ -8,7 +8,7 @@ spring:
 spring:
   profiles: dev
   application:
-    name: tsui-service-product
+    name: tsui-service-goods
   zipkin:
     base-url: http://192.168.1.130:9411 #所有的数据提交到此服务之中
 #    sender:
@@ -25,7 +25,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:9001/eureka/
   instance:
-    instance-id: tsui-service-product
+    instance-id: tsui-service-goods
     prefer-ip-address: true
     lease-expiration-duration-in-seconds: 5
     lease-renewal-interval-in-seconds:  2
@@ -37,5 +37,5 @@ management:
         include: "*"
 
 info:
-  app.name: tsui-service-product
+  app.name: tsui-service-goods
   company.name: tsui

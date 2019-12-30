@@ -1,6 +1,6 @@
 package com.tsui.dao;
 
-import com.tsui.pojo.product.Brand;
+import com.tsui.pojo.goods.Brand;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
