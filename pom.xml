@@ -13,7 +13,7 @@
         <module>tsui-common-web</module>
         <module>tsui-interface</module>
         <module>tsui-common-pojo</module>
-        <module>tsui-service-product</module>
+        <module>tsui-service-goods</module>
         <module>tsui-service-order</module>
         <module>tsui-eureka</module>
         <module>tsui-service-zuul</module>
